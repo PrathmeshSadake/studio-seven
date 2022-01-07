@@ -7,9 +7,20 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-
+i {
+  font-size: 20px;
+  color: #7525f7;
+}
+ul {
+  padding: 0 !important;
+}
+li {
+  list-style: none;
+  cursor: pointer;
+}
 .img-container {
   position: relative;
+  margin: 0.5rem auto;
 }
 .trending__img {
   opacity: 1;
@@ -33,6 +44,7 @@ body {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  display: flex;
 }
 .img-container:hover .middle,
 .img-container:active .middle {
