@@ -17,7 +17,7 @@ const Trending = () => {
               style={{ objectFit: "cover", height: "400px" }}
             />
             <div class="middle">
-              <div class="text">Denim Jeans</div>
+              <div class="text">Denims</div>
             </div>
           </div>
         </Col>

@@ -4,6 +4,8 @@ import Navigation from "../../components/Navigation";
 import Header from "../../components/Header";
 import Trending from "../../components/Trending";
 import Footer from "../../components/Footer";
+import PopularProducts from "../../components/PopularProducts";
+import Newsletter from "../../components/Newsletter";
 
 const Home = () => {
   return (
@@ -12,6 +14,8 @@ const Home = () => {
       <Navigation />
       <Header />
       <Trending />
+      <PopularProducts />
+      {/* <Newsletter /> */}
       <Footer />
     </div>
   );
