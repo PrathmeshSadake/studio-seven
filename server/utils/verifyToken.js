@@ -7,6 +7,7 @@ const verifyToken = async (req, res, next) => {
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     req.user = decoded;
+    console.log(req.user);
     next();
   } catch (error) {
     res.status(403).json({ message: "Token is invalid!", error });
@@ -15,7 +16,7 @@ const verifyToken = async (req, res, next) => {
 
 const verifyTokenAndAuthorization = (req, res, next) => {
   verifyToken(req, res, () => {
-    if (req.user.id === req.params.id || req.user.isAdmin) {
+    if (req.user.user == req.params.id || req.user.isAdmin) {
       next();
     } else {
       res.status(403).json({ message: "You're not authorised!" });

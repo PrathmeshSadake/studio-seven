@@ -5,6 +5,8 @@ require("dotenv").config();
 const usersRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
 
+const verifyToken = require("./utils/verifyToken");
+
 const app = express();
 const db = process.env.MONGO_URI;
 mongoose
